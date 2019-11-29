@@ -1,0 +1,14 @@
+<section class="text-center">
+    <div class="container">
+        <div><h3>Refuelling stops/Starship</h3></div>
+        <div class="d-flex align-items-center justify-content-center">
+        <form class="col-4 text-center">
+            <div class="form-group">
+            <label for="distanceInput">Distance (MGLT)</label>
+            <input type="number" required class="form-control" id="distanceInput" aria-describedby="emailHelp" [(ngModel)]="distanceMGLT" [ngModelOptions]="{standalone: true}">
+            </div>
+        </form>
+        </div>
+    </div>
+</section>
+<starship-list [distanceMGLT]="distanceMGLT"></starship-list>
