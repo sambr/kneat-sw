@@ -75,7 +75,7 @@ export class StarshipItemComponent implements OnInit {
     return stop;
   }
 
-  isNumber(){
+  hasInformation(){
     return parseFloat(this.starship.MGLT) > 0;
   }
 
