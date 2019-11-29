@@ -19,7 +19,7 @@ export class StarshipItemComponent implements OnInit {
         months: number = 0,
         weeks: number = 0,
         days: number = 0,
-        authonomy: number = 0,
+        autonomy: number = 0,
         stop: number = 0,
         unit: string;
 
@@ -70,8 +70,8 @@ export class StarshipItemComponent implements OnInit {
         }
       }
     } 
-    authonomy = parseFloat(this.starship.MGLT) * 24 * days;
-    stop = Math.round(this.distanceMGLT / authonomy);
+    autonomy = parseFloat(this.starship.MGLT) * 24 * days;
+    stop = Math.round(this.distanceMGLT / autonomy);
     return stop;
   }
 
